@@ -3,7 +3,7 @@ const rootDir = 'gamelisting_static_template'
 
 window.addEventListener('load', ()=> {
     const routeName = window.location.pathname.toString().toLowerCase()
-    const route = document.querySelector('[data-route="' + rootDir + '/' + routeName + '"]')
+    const route = document.querySelector('[data-route="' + rootDir + routeName + '"]')
 
     route.setAttribute('active', '')
 })
