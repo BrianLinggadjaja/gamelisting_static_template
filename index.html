@@ -1,0 +1,89 @@
+<html lang="en">
+    <head>
+        <!-- Page Info-->
+        <meta charset="utf-8">
+        <title>Games</title>
+        <meta name="description" content="We make games awesome!">
+
+        <!-- Responsive Metadata -->
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+
+        <!-- Fonts 
+            Bubblegum Sans (Regular)
+            Lorinda Solid (Regular)
+            Averia Sans Libre (Bold)
+        -->
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Bubblegum+Sans&family=Londrina+Solid&display=swap" rel="stylesheet">
+
+        <!-- Javascript -->
+        <script defer src="./js/activeRoute.js"></script>
+
+        <!-- Styling -->
+        <link async rel="stylesheet" type="text/css" href="./css/base.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="branding">Games</h1>
+            <nav class="navigation">
+                <ul class="navigation-menu">
+                    <li class="navigation-menu__route">
+                        <a href="/" data-route="/">Home</a>
+                    </li>
+                    <li class="navigation-menu__route">
+                        <a href="/popular.html" data-route="/popular">Popular</a>
+                    </li>
+                    <li class="navigation-menu__route">
+                        <a href="/reviews.html" data-route="/reviews">Reviews</a>
+                    </li>
+                    <li class="navigation-menu__route">
+                        <a href="/mylist.html" data-route="/mylist">MyList</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="home__slogan">
+                <h2 class="text-center">We make games awesome!</h2>
+            </section>
+
+            <section>
+                <h3 class="genre-title ul">Top Viewed Titles</h3>
+
+                <section class="cards-list">
+                    <span class="cards-list__card">
+                        <img src="./assets/popular/among-us.png" alt="among us">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/popular/gta.jpg" alt="grand theft auto">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/popular/minecraft.jpg" alt="minecraft">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/popular/rocket-league.jpg" alt="rocket league">
+                    </span>
+                </section>
+
+                <section class="home__view-more">
+                    <a class="home__view-more-route" href="/popular">
+                        <span class="interactable text-center">View More</span>
+    
+                        <!-- Chevron SVG -->
+                        <svg version="1.1" class="chevron" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="30.727px" height="30.727px" viewBox="0 0 30.727 30.727" style="enable-background:new 0 0 30.727 30.727;"
+                        xml:space="preserve">
+                            <g>
+                                <path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                                    l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
