@@ -68,7 +68,7 @@ a {
 }
 
 a:hover,
-a[active] {
+menu a[active] {
     border-bottom: 0.25rem solid var(--color-primary-text);
     padding: 0;
     color: var(--color-primary-text);
