@@ -224,3 +224,26 @@ a[active] {
 .popular__listings {
     padding-top: 2rem;
 }
+
+/* Reviews */
+.reviews__listings {
+    padding-top: 2rem;
+}
+
+.reviews__listings .cards-list {
+    justify-content: initial;
+}
+
+.reviews__listing {
+    padding: 1rem;
+    flex: 3;
+}
+
+.reviews__listing-content {
+    margin-top: 1rem;
+}
+
+.reviews__listing-title {
+    font: var(--font-header);
+    font-size: 1.5rem;
+}
