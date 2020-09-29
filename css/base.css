@@ -219,3 +219,8 @@ a[active] {
         padding-bottom: 0.15rem;
     }
 }
+
+/* Popular */
+.popular__listings {
+    padding-top: 2rem;
+}
