@@ -47,46 +47,8 @@
         
         <main class="popular__listings">
             <section>
-                <h3 class="genre-title ul">MMO RPG</h3>
-
-                <section class="cards-list">
-                    <span class="cards-list__card">
-                        <img src="./assets/mmo-rpg/wow.jpg" alt="world of warcraft">
-                    </span>
-                    <span class="cards-list__card">
-                        <img src="./assets/mmo-rpg/eso.jpg" alt="elder scrolls online">
-                    </span>
-                    <span class="cards-list__card">
-                        <img src="./assets/mmo-rpg/runescape.jpg" alt="runescape">
-                    </span>
-                    <span class="cards-list__card">
-                        <img src="./assets/mmo-rpg/bdo.jpg" alt="black desert online">
-                    </span>
-                </section>
-            </section>
-
-            <section>
-                <h3 class="genre-title ul">Battle Royale</h3>
-
-                <section class="cards-list">
-                    <span class="cards-list__card">
-                        <img src="./assets/battle-royal/warzone.jpg" alt="warzone">
-                    </span>
-                    <span class="cards-list__card">
-                        <img src="./assets/battle-royal/fortnite.jpg" alt="fortnite">
-                    </span>
-                    <span class="cards-list__card">
-                        <img src="./assets/battle-royal/apex-legends.jpg" alt="apex legends">
-                    </span>
-                    <span class="cards-list__card">
-                        <img src="./assets/battle-royal/pubg.jpg" alt="playerunkown's battlegrounds">
-                    </span>
-                </section>
-            </section>
-
-            <section>
                 <h3 class="genre-title ul">FPS</h3>
-
+                
                 <section class="cards-list">
                     <span class="cards-list__card">
                         <img src="./assets/fps/valorant.jpg" alt="valorant">
@@ -104,8 +66,27 @@
             </section>
 
             <section>
+                <h3 class="genre-title ul">Battle Royale</h3>
+                
+                <section class="cards-list">
+                    <span class="cards-list__card">
+                        <img src="./assets/battle-royal/warzone.jpg" alt="warzone">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/battle-royal/fortnite.jpg" alt="fortnite">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/battle-royal/apex-legends.jpg" alt="apex legends">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/battle-royal/pubg.jpg" alt="playerunkown's battlegrounds">
+                    </span>
+                </section>
+            </section>
+            
+            <section>
                 <h3 class="genre-title ul">Party Games</h3>
-
+                
                 <section class="cards-list">
                     <span class="cards-list__card">
                         <img src="./assets/party/among-us.png" alt="among us">
@@ -121,25 +102,44 @@
                     </span>
                 </section>
             </section>
+
+            <section>
+                <h3 class="genre-title ul">MMO RPG</h3>
+
+                <section class="cards-list">
+                    <span class="cards-list__card">
+                        <img src="./assets/mmo-rpg/wow.jpg" alt="world of warcraft">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/mmo-rpg/eso.jpg" alt="elder scrolls online">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/mmo-rpg/runescape.jpg" alt="runescape">
+                    </span>
+                    <span class="cards-list__card">
+                        <img src="./assets/mmo-rpg/bdo.jpg" alt="black desert online">
+                    </span>
+                </section>
+            </section>
             
             <section class="home__view-more">
                 <a class="home__view-more-route" onclick="toggleDialog()">
                     <span class="interactable text-center">Load more genres</span>
-
+                    
                     <!-- Chevron SVG -->
                     <svg version="1.1" class="chevron" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     width="30.727px" height="30.727px" viewBox="0 0 30.727 30.727" style="enable-background:new 0 0 30.727 30.727;"
                     xml:space="preserve">
-                        <g>
-                            <path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
-                                l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/>
+                    <g>
+                        <path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                        l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/>
                         </g>
                     </svg>
                 </a>
             </section>
-
-            <div id="dialog" class="mylist__mask">
-                <dialog class="mylist__dialog">
+            
+            <div id="dialog" class="dialog__mask">
+                <dialog class="dialog">
                     <em>Invalid request!</em>
                     <button class="dialog__button interactable" onclick="toggleDialog()">Close</button>
                 </dialog>
