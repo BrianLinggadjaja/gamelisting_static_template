@@ -19,5 +19,5 @@ function toggleDialog() {
         dialog.setAttribute('active', '')
     }
 
-    document.getElementById('dialog').scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
+    dialog.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
 }
