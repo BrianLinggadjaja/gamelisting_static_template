@@ -18,4 +18,6 @@ function toggleDialog() {
     } else {
         dialog.setAttribute('active', '')
     }
+
+    document.getElementById('dialog').scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
 }

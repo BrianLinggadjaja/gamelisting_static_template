@@ -9,6 +9,8 @@
     --font-nav: normal var(--font-size-base) 'Londrina Solid', cursive;
     --font-base: bold var(--font-size-base) 'Averia Sans Libre', cursive;
     --color-primary: #28233E;
+    --color-primary-dark: #1e1827;
+    --color-primary-light: #38305a;
     --color-primary-text: #FFFFFF;
 }
 
@@ -269,8 +271,30 @@ menu a[active] {
 }
 
 .mylist__mask[active] .mylist__dialog {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-text);
+    border: 0.2rem solid var(--color-primary-dark);
     display: flex;
     flex-flow: column;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
     margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.dialog__button {
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-primary-dark);
+    color: var(--color-primary-text);
+    font-size: 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+    margin: 1rem auto 0 auto;
     padding: 0.5rem 1rem;
+    transition: 350ms ease-out;
+}
+
+.dialog__button:hover,
+.dialog__button:focus {
+    background-color: var(--color-primary--light);
 }
