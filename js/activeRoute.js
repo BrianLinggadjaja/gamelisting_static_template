@@ -6,3 +6,14 @@ window.addEventListener('load', () => {
 
     route.setAttribute('active', '')
 })
+
+function toggleMyList() {
+    const dialog = document.getElementById('dialogMyList')
+    let isActive = (dialog.getAttribute('active') !== null)
+
+    if (isActive) {
+        dialog.removeAttribute('active')
+    } else {
+        dialog.setAttribute('active', '')
+    }
+}
