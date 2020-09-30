@@ -4,11 +4,13 @@ window.addEventListener('load', () => {
     const routeName = routePath[(routePathLength - 1)].toString().toLowerCase()
     const route = document.querySelector('[data-route="/' + routeName + '"]')
 
-    route.setAttribute('active', '')
+    if (route !== null) {
+        route.setAttribute('active', '')   
+    }
 })
 
-function toggleMyList() {
-    const dialog = document.getElementById('dialogMyList')
+function toggleDialog() {
+    const dialog = document.getElementById('dialog')
     let isActive = (dialog.getAttribute('active') !== null)
 
     if (isActive) {

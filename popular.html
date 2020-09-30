@@ -85,8 +85,8 @@
             </section>
             
             <section class="home__view-more">
-                <a class="home__view-more-route" href="/gamelisting_static_template/popular">
-                    <span class="interactable text-center">View More</span>
+                <a class="home__view-more-route" onclick="toggleDialog()">
+                    <span class="interactable text-center">Load more genres</span>
 
                     <!-- Chevron SVG -->
                     <svg version="1.1" class="chevron" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -99,6 +99,13 @@
                     </svg>
                 </a>
             </section>
+
+            <div id="dialog" class="mylist__mask">
+                <dialog class="mylist__dialog">
+                    <em>Invalid request!</em>
+                    <button onclick="toggleDialog()">Close</button>
+                </dialog>
+            </div>
         </main>
     </body>
 </html>

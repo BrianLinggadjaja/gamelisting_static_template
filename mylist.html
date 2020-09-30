@@ -78,7 +78,7 @@
             </section>
             
             <section class="home__view-more">
-                <a class="home__view-more-route" onclick="toggleMyList()">
+                <a class="home__view-more-route" onclick="toggleDialog()">
                     <span class="interactable text-center">Load more favorites</span>
 
                     <!-- Chevron SVG -->
@@ -93,10 +93,10 @@
                 </a>
             </section>
 
-            <div id="dialogMyList" class="mylist__mask">
+            <div id="dialog" class="mylist__mask">
                 <dialog class="mylist__dialog">
                     <em>Invalid request!</em>
-                    <button onclick="toggleMyList()">Close</button>
+                    <button onclick="toggleDialog()">Close</button>
                 </dialog>
             </div>
         </main>
