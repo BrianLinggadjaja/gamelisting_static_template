@@ -1,6 +1,8 @@
 window.addEventListener('load', () => {
-    const routeName = window.location.pathname.toString().toLowerCase()
-    const route = document.querySelector('[data-route="' + routeName + '"]')
+    const routePath = window.location.pathname.split('/')
+    const routePathLength = routePath.length
+    const routeName = routePath[(routePathLength - 1)].toString().toLowerCase()
+    const route = document.querySelector('[data-route="/' + routeName + '"]')
 
     route.setAttribute('active', '')
 })
