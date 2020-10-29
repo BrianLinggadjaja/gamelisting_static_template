@@ -1,4 +1,5 @@
-# gamelisting_static_template_demo
+# GameListing Static Template Demo
+
 Date of Creation: 10/28/2020
 
 Created for my Comp 484 course to represent static *HTML* and *CSS* pages.
